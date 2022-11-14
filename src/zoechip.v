@@ -22,7 +22,7 @@
 
 module zoechip #( parameter MAX_COUNT = 1000 ) (
   input [7:0] io_in,
-  output [7:0] io_out
+ output [8:1] io_out
 );
 
 wire A,B,C,D,F,G,M;
@@ -34,7 +34,7 @@ assign io_out[7] = D;
 assign io_out[4] = F;
 assign io_out[5] = G;
 assign io_out[3] = M;
-assign io_out[0] = 0;
+assign io_out[8] = 0;
 
 wire Z = io_in[0];
 wire O = io_in[1];
